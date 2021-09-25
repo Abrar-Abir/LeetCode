@@ -21,10 +21,11 @@ Follow up: Do not allocate extra space for another array. You must do this by mo
 
 ### Solution:
 
-`
+```
 class Solution:
     def reverseString(self, s: List[str]) -> None:
         l = len(s)
         for i in range(l):
             s += s[l-i-1]
-        s[:l] = []`
+        s[:l] = []
+```
